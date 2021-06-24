@@ -1,9 +1,11 @@
 package com.otj.salesorderservice.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-import com.otj.salesorderservice.model.Customer_SOS;
+import com.otj.salesorderservice.model.CustomerSOS;
 
-public interface CustomerSOSRepo extends JpaRepository<Customer_SOS, Long> {
+@Repository
+public interface CustomerSOSRepo extends JpaRepository<CustomerSOS, Long> {
 
 }

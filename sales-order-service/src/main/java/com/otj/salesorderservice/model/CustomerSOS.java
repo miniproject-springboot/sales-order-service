@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Customer_SOS {
+public class CustomerSOS {
 	
 	@Id
 	@GeneratedValue
@@ -14,11 +14,11 @@ public class Customer_SOS {
 	private String cust_last_name;
 	private String cust_email;
 	
-	public Customer_SOS() {
+	public CustomerSOS() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Customer_SOS(long cust_id, String cust_first_name, String cust_last_name, String cust_email) {
+	public CustomerSOS(long cust_id, String cust_first_name, String cust_last_name, String cust_email) {
 		super();
 		this.cust_id = cust_id;
 		this.cust_first_name = cust_first_name;
