@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import com.otj.salesorderservice.model.CustomerSOS;
 import com.otj.salesorderservice.model.OrderLineItem;
@@ -29,6 +30,8 @@ public class SalesOrderController {
 			List<OrderLineItem> item=salesOrder.getOrderLineItem();
 			for(int i=0;i<item.size();i++) {
 				
+				
+				//new RestTemplate().getForEntity("http://localhsot:8001/service2/items/{itemname}", responseType);
 				
 				
 			}
